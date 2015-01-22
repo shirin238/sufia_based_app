@@ -1,0 +1,27 @@
+// Place all the styles related to the static controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'settings';
+
+
+
+/* unvisited link */
+a:link {
+  color: $blue-medium-bright;
+}
+
+/* visited link */
+a:visited {
+  color: $blue-dark;
+}
+
+/* mouse over link */
+a:hover {
+    color: $blue-dark;
+}
+
+/* selected link */
+a:active {
+    color: $blue-dark;
+}

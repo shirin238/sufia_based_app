@@ -13,4 +13,6 @@
  
  *= require_self
  *= require sufia
+ *= require sufia_overrides
+ *= require static
  */
