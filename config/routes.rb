@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+
+  get 'about', to: 'static#about'
+
   mount BrowseEverything::Engine => '/browse'
+  mount Hydra::Collections::Engine => '/'
+  mount HydraEditor::Engine => '/'
   
   blacklight_for :catalog
   devise_for :users
@@ -7,8 +12,8 @@ Rails.application.routes.draw do
   # This must be the very last route in the file because it has a catch-all route for 404 errors.
     # This behavior seems to show up only in production mode.
     mount Sufia::Engine => '/'
+  
   root to: 'homepage#index'
-
 
 
 
