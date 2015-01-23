@@ -13,13 +13,13 @@
         <i id="name" class="<%=params[:sort].blank? ? 'caret' : params[:sort]== "name desc" ? 'caret up' : params[:sort]=="name" ? 'caret' : ''%>"></i>User Name
       </th> 
       <th class="sorts" style="text-align: left;"><i id="email" class="<%=params[:sort]== "email desc" ? 'caret up' : params[:sort]=="email" ? 'caret' : ''%>"></i>User Id</th>
-      <th class="sorts" style="text-align: left;"><i id="department" class="<%=params[:sort]== "department desc" ? 'caret' : params[:sort]== "department" ? 'caret up' : ''%>"></i>Department</th>
+      <th class="sorts" style="text-align: left;"><i id="department" class="<%=params[:sort]== "department desc" ? 'caret up' : params[:sort]== "department" ? 'caret' : ''%>"></i>Department</th>
       <th style="text-align: left;">Files Deposited</th>       
     </thead> 
 
     <tbody> 
       <% @users.each do |user| %> 
-        <tr class="<%= cycle("","zebra") %>" style="border: 1px solid #DDD;"> 
+        <tr class="<%= cycle("","zebra") %>"> 
          <td><a href="<%= sufia.profile_path(user) %>" class="btn btn-sm " ><%= image_tag user.avatar.url(:thumb), width: 30 %></a></td> 
          <td ><a href="<%= sufia.profile_path(user) %>"  ><%= user.name %><a></td> 
          <td><a href="<%= sufia.profile_path(user) %>"  ><%= user.user_key %><a></td>
