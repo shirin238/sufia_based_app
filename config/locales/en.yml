@@ -24,3 +24,13 @@ en:
 
   sufia:
     product_name: "Dash"
+
+    dashboard:
+      stats:
+        heading:            "Your Statistics"
+        files:              "Files you've deposited"
+        file_views:         "View"
+        file_downloads:     "Download"
+        collections:        "Collections created"
+        following:          "People you follow"
+        followers:          "People who are following you"
